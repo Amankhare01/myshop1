@@ -1,0 +1,236 @@
+#navbar{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+    display: flex;
+background-color: #a59797;
+opacity: .8;
+align-items: center;
+    justify-content: space-between;
+}
+#d1 img{
+    height: 40px;
+}
+#navbar ul{
+    display: flex;
+    position: relative;
+    list-style: none;
+    
+    /* margin-left: 200%; */
+}
+#navbar ul li{
+    padding:0 8px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: black;
+    border-radius: 2px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#navbar ul li:hover{
+    color: black;
+    background-color: #c2a442;
+    box-shadow: 4px 4px 4px rgb(63, 111, 189);
+}
+#d2{
+    text-align: center;
+    width: 40px;
+}
+#p1{
+    font-size: 20px;
+    border: 4px black;
+    text-align: center;
+    justify-content: center;
+    border-radius: 2px black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#Home{
+    background-color: rgba(152, 151, 146, 0.553);
+}
+#f1 ul{
+list-style: none;
+}
+#div2{
+    border: 2px solid rgb(0, 0, 0);
+    border-style: solid;
+    width: 100%;
+    box-shadow: 2px 2px 2px grey;
+}
+#div2 img{
+    width: 200px;
+    height: 250px;
+    padding: 2px;
+}
+#s3{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 20px;
+    padding: 20px;
+}
+#pro li, #para1 {
+    font-size: 25px;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#body1{
+    background-color: rgb(188, 188, 188);
+}
+#demo video{
+    width: 350px;
+    height: 200px;
+    box-shadow: 5px 5px 5px rgb(60, 55, 55);
+    border-radius: 5px;
+    margin: 10px;
+}
+#foot{
+    width: 100%;
+    margin: 0%;
+    height: 250px;
+    background-color: grey;
+}
+#foot img{
+    width: 200px;
+    padding: 5px;
+}
+#foot ul li a{
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+#foot ul li a:hover{
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    text-shadow:  1px 1px 1px white;
+}
+#foot ul li{
+    padding: 5px;
+}
+/* #d3{
+    width: 20%;
+    float: left;
+} */
+#d4{
+    width: 33%;
+    float: left;
+    display: inline;
+}
+#d4 ul li{
+    list-style: none;
+}
+#d4 a{
+    text-decoration: none;
+    list-style: none;
+    padding: 8px;
+    color: black;
+}
+/* #d4 a:hover{
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgb(14, 67, 225);
+} */
+#em{
+    padding-top: 50px;
+}
+#wrap{
+    width: 22.5%;
+    border: 1px solid black;
+    word-wrap: break-word;
+    margin: 12px;
+    padding: 2px;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+}
+#wrap img{
+    width: 250px;
+    height: 200px;
+}
+#wrap:hover{
+    cursor: pointer;
+    background: linear-gradient(rgba(51, 51, 51, 0.616),rgba(52, 63, 53, 0.511));
+    transition: 1ms;
+    opacity: .9;
+}
+#pd1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#searchbox{
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    margin-left: 30%;
+}
+#searchbox input{
+    font-size: 20px;
+    border-radius: 20px;
+}
+#searchbox button{
+    font-size: 20px;
+    border-radius: 20px;
+}
+#searchbox button:hover{
+    color: rgb(255, 255, 255);
+    background-color: #680000;
+    cursor: pointer;
+    transform: rotate3d(45);
+}
+#wrap a{
+    color: #000000;
+}
+#wrap a:hover{
+    color: blue;
+    font-weight: bold;
+}
+@media  screen and (max-width:600px) {
+    #navbar{
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+        position: relative;
+        display: flex;
+    background-color: #a59797;
+    opacity: .8;
+    align-items: center;
+        justify-content: space-between;
+    }
+    #wrap img{
+        width: 100px;
+        height: 90px;
+    }
+    #div2 img{
+        width: 75px;
+        height: 90px;
+        padding: 2px;
+    }
+    #div2{
+        border: 2px solid rgb(0, 0, 0);
+        border-style: solid;
+        width: 100%;
+        box-shadow: 2px 2px 2px grey;
+        display: flex;
+    }
+    #searchbox{
+        display: none;
+    }
+}
+#fb31:hover{
+    color: blue;
+    font-weight: bold;
+}
+#yt31:hover{
+    color: rgba(255, 0, 0, 0.922);
+    font-weight: bold;
+}
+#ig31:hover{
+    color: rgba(255, 0, 136, 0.922);
+    font-weight: bold;
+}

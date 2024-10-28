@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="body1">
+    <nav id="navbar">
+        <div id="d1">
+            <a href="#Home"><img src="logo.png" alt="amankhare.com"></a>
+        </div>
+        <div id="d2">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Support.html">Support</a></li>
+        </ul>
+    </div>
+    </nav>
+    <div>
+        <fieldset class="aman">
+        <h1>Contact Us..</h1>
+        <form action="exp.php" onsubmit="return valid()" method="post" name="google-sheet">
+        <label for="name">Full Name</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="phone">Mobile_no</label><br>
+        <input type="tel" id="phone" name="mobile"><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="course">Subject and Query</label><br>
+        <textarea name="Subject" id="course" cols="30" rows="10"></textarea><br>
+        <input type="submit" value="Send" name="submit"><br>
+    </form>
+    </fieldset>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxUbn7hN-IRwIGhJfiknxpZIfqh2uIzYqVCf18LtQY-L-XLHw99pbtoKm1w-H5-5igI/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    </div>
+    <footer id="foot">
+        <div>
+            <div id="d4">
+            <img src="logo.png" alt="">
+            <ul>
+                <li><a href="">Contact</a></li>
+                <li><a href="">terms and Servies</a></li>
+                <li><a href="aboutweb.html">About company</a></li>
+                <li><a href="">Privacy policy</a></li>
+                <li><a href="">Help & feedback</a></li>
+            </ul>
+        </div>
+        <div id="d4">
+            <div id="em">
+                <h1>My local shop</h1>
+                <h4>Email : amankhare.aa@gmail.com</h2>
+                <h4>Address : Nagra Ballia(221711)</h3>
+                &copy; 2023 mylocalshop
+            </div>
+        </div>
+        <div id="d4">
+            <h1>Follow me </h1>
+            <a id="fb31" href="https://www.facebook.com/Aman.khare.980?mibextid=ZbWKwL" class="fa fa-facebook"> facebook</a><br>
+            <a id="fb31" href="https://www.linkedin.com/in/aman-kharwar-0a6843212" class="fa fa-linkedin"> Linkedin</a><br>
+            <a id="yt31" href="https://youtube.com/@amankharemedia" class="fa fa-youtube"> Youtube</a><br>
+            <a id="ig31" href="https://instagram.com/its_amankhare?igshid=ZDc4ODBmNjlmNQ==" class="fa fa fa-instagram"> Instagram</a>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
